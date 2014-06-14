@@ -14,6 +14,10 @@ gem 'bootstrap-sass'
 gem 'high_voltage'
 gem 'therubyracer', :platform=>:ruby
 gem 'thin'
+gem 'google_drive'
+gem "activerecord-tableless", "~> 1.0"
+gem 'simple_form'
+gem 'figaro'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
