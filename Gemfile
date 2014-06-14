@@ -13,7 +13,6 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'high_voltage'
 gem 'therubyracer', :platform=>:ruby
-gem 'thin'
 gem 'google_drive'
 gem "activerecord-tableless", "~> 1.0"
 gem 'simple_form'
@@ -24,4 +23,10 @@ group :development do
   gem 'hub', :require=>nil
   gem 'quiet_assets'
   gem 'rails_layout'
+end
+
+group :production do
+  gem 'pg'
+  gem 'thin'
+  gem 'rails_12factor'
 end
